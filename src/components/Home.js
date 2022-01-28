@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useState,useEffect } from 'react';
 import Stats from './Stats';
 
-const Main = (props) => {
+const Home = (props) => {
+  useEffect(() => {
+    console.log("Home:",props.data)
+  },[props])
+  
   return (
   <div className='main'>
-    <Stats />
+    <Stats data={props.data}/>
   </div>
   )
 };
 
-export default Main;
+export default Home;

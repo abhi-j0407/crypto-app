@@ -1,15 +1,15 @@
-import React,{useState} from 'react';
+import React,{useEffect, useState} from 'react';
 
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import './App.css'
 
-import axios from "axios";
+var axios = require("axios").default;
 
 
 
 const App = () => {
-    //const [data,setData] = useState({})
+    const [data,setData] = useState({})
 
     var options = {
         method: 'GET',
@@ -21,17 +21,26 @@ const App = () => {
         }
       };
       
-      axios.request(options).then(function (response) {
-          console.log(response.data);
-      }).catch(function (error) {
-          console.error(error);
-      });
+
+      useEffect(() => {
+        axios.request(options).then(function (response) {
+            setData(response.data.data);
+            console.log(response.data);
+            console.log("Data App:",data);
+        }).catch(function (error) {
+            console.error(error);
+        });
+      },[])
+
+      useEffect(() => {
+        console.log("Data stored:",data.data);
+      },[data])
 
     
   return (
   <div className='homepage'>
     <Navbar />
-    <Home />
+    <Home data={data.totalCoins}/>
   </div>
   );
 };
