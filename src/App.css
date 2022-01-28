@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200;300;400;500;600;700&family=Roboto&display=swap');
+
+*  
+    { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.homepage {
+    display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar {
+    width: 20%;
+    height: 100vh;
+    border: 1px #ccc solid;
+    background-color: #313552;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header {
+    display: flex;
+    padding: 20px 10px;
+    justify-content: center;
+    filter: invert(1);
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+    width: 40px;
+    margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-item {
+    padding: 10px;
+    filter: invert(1);
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.menu-icon {
+    width: 23px;
+    margin: 5px 15px 0px 15px;
+}
+
+.main {
+    width: 80%;
+    height: 100vh;
+    border: 1px #ccc solid;
+}
+
+.stats-heading {
+    font-family: 'Poppins',sans-serif;
+    padding: 20px;
+}
+
+.global-stats {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.stat {
+    width: 50%;
+    border: 1px #ccc solid;
+    padding: 30px 20px;
+    font-size: 20px;
 }
