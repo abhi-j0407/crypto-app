@@ -21,7 +21,6 @@ const App = () => {
         }
       };
       
-
       useEffect(() => {
         axios.request(options).then(function (response) {
             setData(response.data.data);
