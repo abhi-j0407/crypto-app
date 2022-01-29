@@ -51,23 +51,31 @@
 .main {
     width: 80%;
     height: 100vh;
-    border: 1px #ccc solid;
+    background-color: #FFEFEF;
 }
 
 .stats-heading {
-    font-family: 'Poppins',sans-serif;
-    padding: 20px;
+    font-family: 'Roboto',sans-serif;
+    font-size: 27px;
+    padding: 30px 50px 20px;
+    color: #292C6D;
 }
 
 .global-stats {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
 }
 
 .stat {
     width: 50%;
-    border: 1px #ccc solid;
-    padding: 30px 20px;
+    padding: 18px 50px;
     font-size: 20px;
+    color: #4B6587;
+}
+
+.stat-title {
+    font-size: 17px;
+    padding-bottom: 8px;
+    color: #7C99AC;
+    font-weight: lighter;
 }
