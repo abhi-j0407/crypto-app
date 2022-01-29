@@ -32,14 +32,14 @@ const App = () => {
       },[])
 
       useEffect(() => {
-        console.log("Data stored:",data.data);
+        console.log("Data stored:",data);
       },[data])
 
     
   return (
   <div className='homepage'>
     <Navbar />
-    <Home data={data.totalCoins}/>
+    <Home data={data}/>
   </div>
   );
 };
