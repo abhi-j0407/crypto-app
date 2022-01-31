@@ -11,6 +11,7 @@
 
 .homepage {
     display: flex;
+    background-color: #FFEFEF;
 }
 
 .navbar {
@@ -51,7 +52,7 @@
 .main {
     width: 80%;
     height: 100vh;
-    background-color: #FFEFEF;
+    
 }
 
 .stats-heading {
@@ -78,4 +79,66 @@
     padding-bottom: 8px;
     color: #7C99AC;
     font-weight: lighter;
+}
+
+.crypto-container {
+    display: flex;
+    border: 1px #ccc solid;
+    margin: 0px 2.5%;
+    justify-content: space-around;
+    
+    flex-wrap: wrap;
+}
+
+.crypto-header {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.show-more {
+    padding: 50px 10%;
+    font-size: 20px;
+    color: #4B6587;
+}
+
+.crypto-card {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    border: 1px #ccc solid;
+    align-items: center;
+    margin: 0.5%;
+}
+
+.crypto-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3%;
+    width: 87%;
+}
+
+.crypto-icon {
+    width: 10%;
+    margin: 5px;
+}
+
+hr {
+    border: 1px #ccc solid;
+    width: 85%;
+}
+
+.crypto-content {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    justify-content: left;
+    margin: 5%;
+}
+
+.card-stat {
+    font-size: 13px;
+    color: #7C99AC;
+    margin: 4%;
 }

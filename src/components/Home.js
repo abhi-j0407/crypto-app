@@ -1,5 +1,6 @@
 import React, { useState,useEffect } from 'react';
 import Stats from './Stats';
+import CryptoSummary from './CryptoSummary';
 
 const Home = (props) => {
   // useEffect(() => {
@@ -9,6 +10,7 @@ const Home = (props) => {
   return (
   <div className='main'>
     <Stats data={props.data}/>
+    <CryptoSummary />
   </div>
   )
 };
