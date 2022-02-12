@@ -57,7 +57,6 @@ const CryptoSummary = () => {
     </div>
     <div className='crypto-container'>
          {
-
             coins.slice(0,count).map((n) => (
                 <CryptoCard key = {n.rank} data = {n} />
             ))
