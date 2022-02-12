@@ -8,7 +8,7 @@ const Stats = (props) => {
     const [total24hVolume, setTotal24hVolume] = useState();
     const [totalMarkets, setTotalMarkets] = useState();
     useEffect(() => {
-        console.log("Stats:",props.data);
+        // console.log("Stats:",props.data);
         setTotalCoins(props.data.totalCoins);
         setTotalExchanges(props.data.totalExchanges);
         setTotalMarketCap(props.data.totalMarketCap);

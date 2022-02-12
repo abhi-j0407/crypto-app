@@ -1,6 +1,7 @@
-import React, { useState,useEffect } from 'react';
+import React from 'react';
 import Stats from './Stats';
 import CryptoSummary from './CryptoSummary';
+import NewsSummary from './NewsSummary';
 
 const Home = (props) => {
   // useEffect(() => {
@@ -11,6 +12,7 @@ const Home = (props) => {
   <div className='main'>
     <Stats data={props.data}/>
     <CryptoSummary />
+    <NewsSummary />
   </div>
   )
 };

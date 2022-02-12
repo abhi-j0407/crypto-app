@@ -24,16 +24,16 @@ const App = () => {
       useEffect(() => {
         axios.request(options).then(function (response) {
             setData(response.data.data);
-            console.log(response.data);
-            console.log("Data App:",data);
+            // console.log(response.data);
+            // console.log("Data App:",data);
         }).catch(function (error) {
             console.error(error);
         });
       },[])
 
-      useEffect(() => {
-        console.log("Data stored:",data);
-      },[data])
+      // useEffect(() => {
+      //   console.log("Data stored:",data);
+      // },[data])
 
     
   return (
